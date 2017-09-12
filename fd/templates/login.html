@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='login.css')}}">
+</head>
+<body>
+	<div class="login-box">
+		<div class="login-header">
+			<h2>登录</h2>
+		</div>
+		<div class="login-body">
+			<form method="post" action="{{url_for('fd.login')}}">
+				<div class="login-group">
+					<label>用户名:</label>
+					<input type="text" name="account" placeholder="请输入用户名">
+				</div>
+				<div class="login-group">
+					<label>密码:</label>
+					<input type="password" name="password" placeholder="请输入密码">
+				</div>
+				<div class="login-group">
+					<button type="submit">登录</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
